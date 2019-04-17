@@ -5,7 +5,7 @@ class Check_box:
     def __init__(self, master):
 
         self.state = 0
-        self.canvas = Canvas(master)
+        self.canvas = Canvas(master, width=10, height=20)
 
         self.canvas.bind("<Button-1>", self.state_changer)
 
