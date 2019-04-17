@@ -9,7 +9,9 @@ class Check_box:
 
         self.canvas.bind("<Button-1>", self.state_changer)
 
-    def state_changer(self, x):
+    def state_changer(self, event):
+
+        print(event.x)
 
         self.canvas.delete("all")
         self.state += 1
