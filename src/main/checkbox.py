@@ -11,8 +11,6 @@ class Check_box:
 
     def state_changer(self, event):
 
-        print(event.x)
-
         self.canvas.delete("all")
         self.state += 1
 
