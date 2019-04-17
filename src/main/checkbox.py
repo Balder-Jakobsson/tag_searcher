@@ -17,4 +17,4 @@ class Check_box:
         if self.state == 3:
             self.state = 0
 
-        self.canvas.create_rectangle(0, 0, 10, 10*self.state)
+        self.canvas.create_rectangle(1, 1, 10, 10*self.state)
