@@ -7,12 +7,12 @@ class Tag_porter:
 
         self.canvas = Canvas(master,width=10, height=10)
 
-        self.canvas.bind("<Button-1>", self.filepicker)
+        self.canvas.bind("<Button-1>", self.file_picker)
 
     def file_picker(self, event):
         self.canvas.delete("all")
 
-        filename = askopenfilename()
+        self.filename = askopenfilename()
+        print(self.filename)
 
         self.canvas.create_rectangle(0, 0, 10, 10)
-
