@@ -9,10 +9,10 @@ class Tag_porter:
 
         self.canvas.bind("<Button-1>", self.file_picker)
 
+
+        self.canvas.create_rectangle(1, 1, 10, 10, fill="Blue")
+
     def file_picker(self, event):
-        self.canvas.delete("all")
 
         self.filename = askopenfilename()
         print(self.filename)
-
-        self.canvas.create_rectangle(0, 0, 10, 10)
